@@ -1,0 +1,158 @@
+name: User Dashboard - Collaborative Development
+description: Build a complete user dashboard with multiple agents working together
+
+initial_prompt: |
+  You are building a comprehensive user dashboard for the InterCoachAI application.
+  This is a collaborative effort where multiple agents work together on different aspects.
+  
+  Key Requirements:
+  - Modern, responsive UI using the existing framework
+  - Real-time data updates
+  - User profile management
+  - Activity tracking and analytics
+  - Settings and preferences
+  
+  Architecture Guidelines:
+  - Follow existing code patterns in the project
+  - Use TypeScript for type safety
+  - Implement proper error handling
+  - Create reusable components
+  - Write tests for critical functionality
+  
+  Before starting:
+  1. Analyze the existing codebase structure
+  2. Identify where dashboard components should be placed
+  3. Check existing APIs and data models
+  4. Coordinate with other agents on shared interfaces
+
+steps:
+  - content: Design the dashboard layout and component architecture
+    description: |
+      Create a responsive layout with:
+      - Header with credit balance display and user profile
+      - Hero section with personalized greeting and quick stats
+      - Grid layout for quick interview access cards
+      - Interview type selection section
+      - Progress tracking area
+      - Mobile-first breakpoints (320px, 768px, 1024px+)
+    
+  - content: Implement Quick Interview Access (Credit-Based) section
+    description: |
+      Build prominent interview starter cards featuring:
+      - One-click access for popular roles (Software Engineer, PM, Data Scientist, Consultant)
+      - Credit balance display with real-time updates
+      - No additional info required - uses stored job description prompt and ingests user profile/resume
+      - Credit purchase/top-up modal if balance is low
+      - Hover animations and loading states
+    
+  - content: Create Interview Type Selection component
+    description: |
+      Implement category cards for different interview types:
+      - Behavioral (STAR method practice)
+      - Technical (coding challenges, system design)
+      - Case Interviews (consulting frameworks)
+      - Test Cases (QA scenarios)
+      - Domain-Specific (Finance, Healthcare, etc.)
+      - Include difficulty badges and duration estimates
+      - Visual icons with subtle hover effects
+    
+  - content: Build Custom Job Creation flow
+    description: |
+      Create wizard-style interface for role-specific practice:
+      - Integration with InterviewSetup component
+      - Job title and description input
+      - Skills selection with auto-complete
+      - Interview type preferences
+      - Save custom jobs for quick access
+    
+  - content: Implement Feedback Center
+    description: |
+      Design comprehensive feedback review system:
+      - List of past interview sessions with scores
+      - Detailed AI-generated insights
+      - Performance trends visualization
+      - Strengths and improvement areas
+      - Export functionality for reports
+    
+  - content: Create Resume Management module
+    description: |
+      Build resume upload and optimization features:
+      - Drag-and-drop file upload
+      - Resume parser with preview
+      - AI-powered optimization suggestions
+      - Version history tracking
+      - Quick update interface
+    
+  - content: Implement Progress Tracking dashboard
+    description: |
+      Create visual analytics components:
+      - Line graphs for performance over time
+      - Radar charts for skill assessment
+      - Bar charts for interview type comparisons
+      - Progress bars with animations
+      - Filterable date ranges
+      - Interactive tooltips
+    
+  - content: Build Interview Simulator Widget
+    description: |
+      Develop quick practice features:
+      - 5-minute drill sessions
+      - Daily interview question card
+      - Voice-based practice mode toggle
+      - Real-time confidence meter
+      - Streak counter for consistency
+
+  - content: Create Resource Hub section
+    description: |
+      Implement learning resources:
+      - Industry-specific interview guides
+      - Company culture insights cards
+      - Salary negotiation simulator link
+      - Post-interview templates
+      - Search and filter functionality
+
+  - content: Implement mobile-specific optimizations
+    description: |
+      Enhance mobile experience with:
+      - Touch-optimized interactions (44x44px minimum)
+      - Swipe gestures for card navigation
+      - Pull-to-refresh functionality
+      - Bottom navigation bar
+
+  - content: Add micro-interactions and animations
+    description: |
+      Implement polished UI interactions:
+      - Card hover states with scaling
+      - Loading skeletons for async content
+      - Smooth transitions (300ms default)
+      - Success/error state animations
+      - Progress bar fill animations
+      - Toast notifications
+
+  - content: Integrate data visualization libraries
+    description: |
+      Set up charting capabilities:
+      - Chart.js or D3.js integration
+      - Responsive chart containers
+      - Custom color schemes matching brand
+      - Export to PNG/PDF functionality
+      - Accessibility features for charts
+
+  - content: Implement state management for dashboard
+    description: |
+      Create centralized state management:
+      - User profile and preferences
+      - Credit balance real-time updates
+      - Interview history caching
+      - Performance metrics storage
+      - Optimistic UI updates
+  
+  - content: Write comprehensive tests
+    description: |
+      Ensure reliability with:
+      - Unit tests for all components
+      - Integration tests for user flows
+      - Visual regression tests
+      - Performance benchmarks
+      - Accessibility compliance tests
+      - Mobile responsiveness tests

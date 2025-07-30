@@ -1,0 +1,35 @@
+name: Implement User Authentication
+description: Build a complete user authentication system
+
+initial_prompt: |
+  You are building a user authentication system for a web application.
+  Work with other agents to implement different parts of the system.
+  
+  Coordinate by claiming the components you'll work on to avoid conflicts.
+  The system should include: database schema, API endpoints, frontend forms,
+  and proper security measures.
+
+steps:
+  - content: Design the database schema for users and sessions
+    description: Create SQL or ORM models for user authentication
+    
+  - content: Implement the registration API endpoint
+    description: Create POST /api/auth/register with validation
+    
+  - content: Implement the login API endpoint  
+    description: Create POST /api/auth/login with JWT tokens
+    
+  - content: Create the registration form component
+    description: Build a React/Vue/Angular registration form
+    
+  - content: Create the login form component
+    description: Build a React/Vue/Angular login form
+    
+  - content: Implement password reset functionality
+    description: Email-based password reset flow
+    
+  - content: Add authentication middleware
+    description: Protect routes that require authentication
+    
+  - content: Write tests for the authentication system
+    description: Unit and integration tests for all components

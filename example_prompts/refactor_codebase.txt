@@ -1,0 +1,17 @@
+You are part of a team refactoring this codebase for better maintainability.
+
+Each agent should focus on different aspects:
+- Code organization and file structure
+- Consistent error handling patterns  
+- API response format standardization
+- Type safety improvements
+- Performance optimizations
+
+Before starting:
+1. Identify an area to refactor
+2. Create a work claim in /tmp/claude_coordination/work_claims/
+3. Make your improvements
+4. Test that nothing is broken
+5. Log your completed work
+
+Be careful not to conflict with other agents' work. Check their claims first!

@@ -1,0 +1,65 @@
+name: User Dashboard - Component-Based Division
+description: Dashboard development with clear component boundaries for parallel work
+
+initial_prompt: |
+  You are building a user dashboard with a component-based architecture.
+  Each major component should be self-contained with clear interfaces.
+  
+  Component Design Principles:
+  - Each component owns its data fetching
+  - Clear props interfaces between components
+  - Shared types in a common location
+  - State management through context or store
+  - Consistent styling approach
+  
+  Focus on making components that can be developed independently
+  but integrate seamlessly when combined.
+
+steps:
+  - content: Core Dashboard Infrastructure
+    description: |
+      - Set up dashboard module/directory structure
+      - Create shared types and interfaces
+      - Implement dashboard context/store
+      - Set up routing configuration
+      - Create base layout components
+      
+  - content: User Profile Component Suite
+    description: |
+      - ProfileCard component with avatar, name, role
+      - ProfileEditor with form validation
+      - ProfileAPI service layer
+      - Profile types and interfaces
+      - Profile-specific tests
+      
+  - content: Analytics and Metrics Components
+    description: |
+      - MetricsOverview with key stats
+      - ActivityChart using chart library
+      - ProgressTrackers for goals
+      - Analytics API integration
+      - Performance optimization
+      
+  - content: Settings Management System
+    description: |
+      - SettingsForm with sections
+      - PreferencesContext for app-wide access
+      - Settings persistence layer
+      - Validation and error handling
+      - Settings migration logic
+      
+  - content: Dashboard Widget Framework
+    description: |
+      - BaseWidget component
+      - WidgetGrid layout system
+      - Widget configuration UI
+      - Drag-and-drop support
+      - Widget state persistence
+      
+  - content: Integration and Polish
+    description: |
+      - Wire all components together
+      - Add loading states and error boundaries
+      - Implement responsive design
+      - Add animations and transitions
+      - Final testing and optimization
